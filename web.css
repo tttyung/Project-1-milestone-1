@@ -1,0 +1,58 @@
+.menu-item {
+  background-color: red;
+  color: #49c3cf;
+      font-weight: bold;
+      font-size: 110%;
+
+  }
+h1{
+background-color: blue;
+  color: white;
+   font-family: helvetica;
+}
+h2{
+  background-color: blue;
+    color: white;
+    font-family: helvetica;
+}
+p{
+  font-family: helvetica;
+}
+.login {
+  color: blue;
+  font-family: helvetica;
+
+}
+.list1{
+list-style-type : circle;
+
+}
+.list2{
+list-style-type: upper-roman;
+}
+.red:hover {
+background-color: red;
+color: black;
+}
+.orange:hover {
+background-color: orange;
+color: black;
+}
+.yellow:hover {
+background-color: yellow;
+color: black;
+}
+.green:hover {
+background-color: green;
+color: black;
+}
+}
+.barca {
+  width: 80%;
+  padding: 100px
+}
+}
+
+
+
+}

@@ -2,97 +2,128 @@
 <html>
 <head>
 <title>Hello! This Is Seok Hyun!</title>
+<link rel="stylesheet" href="web.css">
+<link rel="stylesheet" href="tablet.css" media="print">
+<link rel="stylesheet" href="tablet.css" media="screen">
 </head>
+
 <body>
 
 <br>
+<div class="menu-item">
 
 <a href="#/aboutme/">About Me</a> |
 <a href="#/internship/">Internship</a> |
 <a href="#/program/">Programs</a> |
 <a href="#/musicvideo/">Music Video</a>
-
+</div>
 <br>
-<br>
+<div class="login">
   <form action="/action_page.php">
-  First name: <input type="text" name="FirstName" value="Mickey"><br>
-  Last name: <input type="text" name="LastName" value="Mouse"><br>
+<h2 id="login">Login</h2>
+  First Name: <input type="text" name="FirstName" value="John"><br>
+  Last Name: <input type="text" name="LastName" value="Doe"><br>
   <input type="submit" value="Submit">
   </form>
-<h1>My Welcome To Seok Hyun's Profile!</h1>
+</div>
+<h1 class="menu">Welcome To Seok Hyun's Profile!</h1>
+<div class="image">
+  <style>
+  img {
+    border-radius: 8px;
+  }
+  </style>
 <image src="Barcelona-Logo.jpg" alt="FC Barcelona">
+</div>
+<div class="aboutme">
 <h2 id="/aboutme/">About Me</h2>
-<p>My Name is Lee, Seok Hyun and My major in Information Technology.
-  My Education level is Senior at St.John's University</p>
+<p>My Name is SeokHyun. You can call me Eric. My major is Information
+  Technology.My Education level is Senior at St.John's University</p>
 <p>I am glad to take CUS 1172 to learn Web Developing Application.</p>
+</div>
+
+<div class="website">
 <a href="https://www.google.com">Visit and play with google.com!</a>
-</body>
-<p>Let's have <span style="color:blue">fun</span> together!</p>
+<p>Let's have <span style="color:blue">FUN</span> together!</p>
+</div>
+
+<div class="internship">
 <h2 id="/internship/">Internship</h2>
-<p>My Internship Experience</p>
-<ul style="list-style-type:disc;">
+<h3>My Internship Experience</h3>
+<ul class="list1">
   <li>Data Analytics. Bling Lash, NY</li>
   <li>Business Analytics. Pison Contents, SF</li>
   <li>Online Marketing Assistant. Lobos Inc.</li>
 </ul>
+</div>
+
+<div class="program">
 <h2 id="/program/">Program Skills</h2>
-<p>My programming Skills.</p>
-<ol type="1">
-  <li>Documentation Programs: Microsoft Office.</li>
+<h3>My programming Skills</h3>
+<ol type="1" class="list2">
+  <li>Documentation Programs: Microsoft Office</li>
   <li>Anaytics Programs: IMB Watson, Tableau </li>
   <li>Database Programs: My SQL, Java</li>
 </ol>
-
-<table style="width:100%">
+</div>
+<div class="table">
+<table style="width:100%" id="table1">
   <style>
   table, th, td {
     border: 1px solid black;
+
   }
   </style>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
+  <tr class="red">
+    <th>Favorite Team</th>
+    <th>City</th>
+    <th>Sports</th>
   </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
+  <tr class="orange">
+    <td>FC Barcelona</td>
+    <td>Barcelona</td>
+    <td>Soccer</td>
   </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
+  <tr class="yellow">
+    <td>AC Milan</td>
+    <td>Milan</td>
+    <td>Soccer</td>
   </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
+  <tr class="green">
+    <td>Seattle Mariners</td>
+    <td>Seattle</td>
+    <td>Baseball</td>
   </tr>
 </table>
+</div>
+
 <br>
 <div id="myDiv" name="myDiv" title="Example Div Element" style="color: #0900C4;
 font: Helvetica 12pt;border: 1px solid black;">
-  <h5>Subtitle</h5>
-  <p>This paragraph would be your content paragraph...</p>
-  <p>Here's another content article right here.</p>
+  <h4>Favorite Quote</h4>
+  <p>Football is about making mistakes. Who makes the most, loses the game.</p>
+  <h5>Johan Cruijff</h5>
+  <img class="barca" src="Johan.jpg" alt=Johan1>
 </div>
 <br>
-<p>My General Interest Is...</p>
+<h2 id="/general/">General Interest</h2>
+<h3>My General Interest Is...</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/X3Zs-HZczUM"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
 picture-in-picture" allowfullscreen></iframe>
 <br>
 <h2 id="/musicvideo/">Music Video</h2>
-<p>My Favorite Music Video Is...</p>
+<h3>My Favorite Music Video Is...</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U2CzrJcugSs"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
 picture-in-picture" allowfullscreen></iframe>
 <br>
-<p>My Favorite Websites is...</p>
+
+<h2>My Favorite Websites</h2>
 <ol type="1">
   <li>www.google.com</li>
   <li>www.youtube.com </li>
   <li>www.yahoo.com</li>
 </ol>
+</body>
 </html>

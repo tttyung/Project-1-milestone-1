@@ -1,0 +1,15 @@
+@media screen (min-width : 1224px) {
+
+}
+@media screen (min-width : 768px) (max-width : 1024px) {
+}
+@media print {
+.menu-item {
+  display: none;
+}
+.login {
+  display:none;
+}
+  }
+
+}
