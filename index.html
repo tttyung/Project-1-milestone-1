@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript">
+    function Hello() {
+      alert('Hello!');
+      document.quaryselector("h1").innerHTML = "Bye";
+    }
+    </script>
 <title>Hello! This Is Seok Hyun!</title>
 <link rel="stylesheet" href="web.css">
 <link rel="stylesheet" href="tablet.css" media="print">
 <link rel="stylesheet" href="tablet.css" media="screen">
+<link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+</script>
 </head>
 
 <body>
@@ -18,27 +32,90 @@
 <a href="#/musicvideo/">Music Video</a>
 </div>
 <br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col" style="background-color:blue;">Liberty</div>
+    <div class="col" style="background-color:white;">Equality</div>
+    <div class="col" style="background-color:red;" style="color:white;">
+      Fraternity</div>
+  </div>
+</div>
+<br>
 <div class="login">
   <form action="/action_page.php">
 <h2 id="login">Login</h2>
-  First Name: <input type="text" name="FirstName" value="John"><br>
-  Last Name: <input type="text" name="LastName" value="Doe"><br>
-  <input type="submit" value="Submit">
+  First Name: <input type="text()"><br>
+  Last Name: <input type="text()"> <br>
+  <button onclick="Hello()">Click Here!</button>
   </form>
 </div>
+<br>
+<style>
+
+  .carousel-inner img {
+    width: 75%;
+    height: 75%;
+
+  }
+  </style>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="seattle.jpg" alt="seattlenight" class="mx-auto d-block"
+      width="1100" height="500">
+     <div class="carousel-caption">
+       <h3>Seattle</h3>
+       <p>My First City in US</p>
+     </div>
+   </div>
+   <div class="carousel-item">
+     <img src="newyork.jpg" alt="newyorknight" class="mx-auto d-block"
+     width="1100" height="500">
+     <div class="carousel-caption">
+       <h3>New York</h3>
+       <p>Greatest City in US</p>
+     </div>
+   </div>
+   <div class="carousel-item">
+     <img src="sanfran.jpg" alt="sanfrannight" class="mx-auto d-block"
+     width="1100" height="500">
+     <div class="carousel-caption">
+       <h3>San Francisco</h3>
+       <p>Memory Of Internship</p>
+     </div>
+   </div>
+ </div>
+ <a class="carousel-control-prev" href="#demo" data-slide="prev">
+   <span class="carousel-control-prev-icon"></span>
+ </a>
+ <a class="carousel-control-next" href="#demo" data-slide="next">
+   <span class="carousel-control-next-icon"></span>
+ </a>
+</div>
+<br>
 <h1 class="menu">Welcome To Seok Hyun's Profile!</h1>
+<br>
 <div class="image">
+<div class="w3-container">
   <style>
   img {
     border-radius: 8px;
   }
   </style>
-<image src="Barcelona-Logo.jpg" alt="FC Barcelona">
+<image src="Barcelona-Logo.jpg" class="img-thumbnail" alt="FC Barcelona">
 </div>
+</div>
+<br>
+
 <div class="aboutme">
 <h2 id="/aboutme/">About Me</h2>
 <p>My Name is SeokHyun. You can call me Eric. My major is Information
-  Technology.My Education level is Senior at St.John's University</p>
+  Technology.My Education level is Senior at St.John's University.</p>
 <p>I am glad to take CUS 1172 to learn Web Developing Application.</p>
 </div>
 
@@ -46,27 +123,35 @@
 <a href="https://www.google.com">Visit and play with google.com!</a>
 <p>Let's have <span style="color:blue">FUN</span> together!</p>
 </div>
-
+<br>
 <div class="internship">
 <h2 id="/internship/">Internship</h2>
-<h3>My Internship Experience</h3>
+<div class="w3-container">
+<h3>My Internship Experience <span class="badge badge-primary">Internship!</span>
+</h3>
 <ul class="list1">
   <li>Data Analytics. Bling Lash, NY</li>
   <li>Business Analytics. Pison Contents, SF</li>
   <li>Online Marketing Assistant. Lobos Inc.</li>
 </ul>
 </div>
-
+</div>
+<br>
 <div class="program">
+  <div class="w3-container">
 <h2 id="/program/">Program Skills</h2>
-<h3>My programming Skills</h3>
+<h3>My programming Skills <span class="badge badge-danger">Skills!</span></h3>
 <ol type="1" class="list2">
   <li>Documentation Programs: Microsoft Office</li>
   <li>Anaytics Programs: IMB Watson, Tableau </li>
   <li>Database Programs: My SQL, Java</li>
 </ol>
 </div>
+</div>
+<br>
 <div class="table">
+<h2>My Favorite Teams</h3>
+<br>
 <table style="width:100%" id="table1">
   <style>
   table, th, td {
@@ -100,26 +185,35 @@
 <br>
 <div id="myDiv" name="myDiv" title="Example Div Element" style="color: #0900C4;
 font: Helvetica 12pt;border: 1px solid black;">
+<div class="w3-container">
   <h4>Favorite Quote</h4>
-  <p>Football is about making mistakes. Who makes the most, loses the game.</p>
+
+  <p class="bg-primary text-white">Football is about making mistakes.
+    Who makes the most, loses the game.</p>
+
   <h5>Johan Cruijff</h5>
   <img class="barca" src="Johan.jpg" alt=Johan1>
 </div>
+</div>
 <br>
 <h2 id="/general/">General Interest</h2>
-<h3>My General Interest Is...</h3>
+<div class="w3-container">
+<h3>My General Interest Is...<span class="badge badge-info">Football!</span></h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/X3Zs-HZczUM"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
 picture-in-picture" allowfullscreen></iframe>
+</div>
 <br>
 <h2 id="/musicvideo/">Music Video</h2>
-<h3>My Favorite Music Video Is...</h3>
+<div class="w3-container">
+<h3>My Favorite Music Video Is...<span class="badge badge-dark">Cash!</span></h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U2CzrJcugSs"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
 picture-in-picture" allowfullscreen></iframe>
+</div>
 <br>
 
-<h2>My Favorite Websites</h2>
+<h2>Favorite Websites</h2>
 <ol type="1">
   <li>www.google.com</li>
   <li>www.youtube.com </li>
