@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+
+    <title>Quiz Questions And Answers</title>
+</head>
+
+<body>
+<style>
+
+.half img {
+    width: 10%;
+    height: 10%;
+  }
+.quarter img {
+  width : 10%;
+  height : 10%
+}
+.full img {
+  width : 15%;
+  height : 15%
+}
+
+
+</style>
+    <center><h1>Quiz Questions</h1></center>
+    <p>
+    <form name="quiz">
+    <p>
+    <b>Question 1.
+    <br>What is a quarter?<br></b>
+
+<div class = "half">
+    <label><input id = "half" type="radio" name="q1"class="q1" value="half">
+      <img class="half"src="half.jpg" alt=half1></label><br>
+</div>
+<div class = "quarter">
+  <label><input id = "quarter" type="radio" name="q1"class="q1" value="quarter">
+    <img class="quarter"src="quarter.jpg" alt=quarter1></label><br>
+</div>
+<div class = "full">
+    <label><input id = "full" type="radio" name="q1" class="q1"value="full">
+      <img class="full"src="full.jpg" alt=full1></label><br>
+</div>
+
+
+<p><b>
+<hr>
+Question 2.
+<br>What is 5 + 9?<br></b>
+
+<label><input type="radio" name="q2" value="14">14</label><br>
+<label><input type="radio" name="q2" value="11">11</label><br>
+<label><input type="radio" name="q2" value="15">15</label><br>
+
+<p><b>
+<hr>
+
+Question 3.
+<br>What multiplication make 40?<br></b>
+<label><input type="radio" name="q3" value="5X8">5X8</label><br>
+<label><input type="radio" name="q3" value="7X7">7X7</label><br>
+<label><input type="radio" name="q3" value="9X6">9X6</label><br>
+<p><b>
+<hr>
+Question 4.
+<br>David has $ 1000 in his bank account. he spends $500 for buying new laptop
+for his grandfather's gift. He recieves borrowing money for $250 from his
+sister. How much he has for final? <br></b>
+
+<label><input type="radio" name="q4" value="500">$500</label><br>
+<label><input type="radio" name="q4" value="1000">$1000</label><br>
+<label><input type="radio" name="q4" value="750">$750</label><br>
+
+<p><b>
+<hr>
+Question 5.
+<br>Which game has the highest probability to win?<br></b>
+
+<label><input type="radio" name="q5" value="bingo game">Bingo Game</label><br>
+<label><input type="radio" name="q5" value="dice game">Dice game</label><br>
+<label><input type="radio" name="q5" value="coin flipping">Coin Flipping</label><br>
+
+<p><b>
+
+
+
+<input type="button"value="Grade Me"onClick="getScore(this.form);">
+<input type="reset" value="Clear"><p>
+Number of score out of 5 = <input type= text size 15 name= "mark">
+Score in percentage = <input type=text size=15 name="percentage"><br>
+
+</form>
+<p>
+
+    <form method="post" name="Form" onsubmit="" action="">
+</form>
+
+</body>
+
+
+<script>
+var numQues = 5;
+var numChoi = 3;
+var answers = new Array(5);
+answers[0] = "quarter";
+answers[1] = "14";
+answers[2] = "5X8";
+answers[3] = "750";
+answers[4] = "coin flipping";
+var wrong = new Array(5);
+wrong[0] = "half";
+wrong[1] = "11";
+wrong[2] = "7X7";
+wrong[3] = "500";
+wrong[4] = "bingo game";
+var wrong1 = new Array(5);
+wrong1[0] = "full";
+wrong1[1] = "15";
+wrong1[2] = "9X6";
+wrong1[3] = "1000";
+wrong1[4] = "dice game";
+function getScore(form) {
+  var score = 0;
+  var currElt;
+  var currSelection;
+  for (i = 0; i < numQues; i++) {
+    currElt = i * numChoi;
+    answered = false;
+    for (j = 0; j < numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        answered = true;
+        if (currSelection.value == answers[i]) {
+          score += 1;
+          break;
+        }
+        if (currSelection.value == wrong[i]) {
+          score -= 0;
+          break;
+        }
+
+      }
+    }
+  }
+  var scoreper = Math.round(score * 20);
+
+  form.percentage.value = scoreper + "%";
+  form.mark.value = score;
+  
+}
+</script>
+</html>
